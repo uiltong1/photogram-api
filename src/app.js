@@ -13,9 +13,6 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Connect database
-app.use(db);
-
 // Config cors
 app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
 
